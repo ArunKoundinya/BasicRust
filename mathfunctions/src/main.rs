@@ -1,8 +1,8 @@
 fn main() {
-    let numbers: Vec<i32> = vec![1, 2, 3, 4, 5];     // Create a vector of integers
+    let numbers: Vec<i32> = vec![1, 2, 3, 4, 5]; // Create a vector of integers
 
     // Pass a reference to the vector so that `numbers` can be reused
-    let sum_results = mathfunctions::add_numbers(&numbers);  
+    let sum_results = mathfunctions::add_numbers(&numbers);
     let prod_results = mathfunctions::multiple_numbers(&numbers);
     let divide_results = mathfunctions::our_division(&numbers);
 
@@ -12,6 +12,4 @@ fn main() {
         Some(result) => println!("The result of the division is: {}", result),
         None => println!("Cannot divide by zero."),
     }
-
-    
 }
